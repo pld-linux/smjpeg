@@ -44,7 +44,7 @@ Requires:	%{name}-devel = %{version}
 %description static
 Smjpeg static libraries.
 
-%description devel -l pl
+%description static -l pl
 Biblioteki statyczne smjpeg.
 
 %prep
