@@ -1,7 +1,7 @@
 Summary:	SDL SMJPEG Library
 Name:		smjpeg
 Version:	0.2.1
-Release:	2
+Release:	4
 License:	LGPL
 Group:		Libraries
 Group(de):	Libraries
@@ -9,7 +9,7 @@ Group(fr):	Librairies
 Group(pl):	Biblioteki
 Source0:	ftp://ftp.lokigames.com/pub/open-source/smjpeg/%{name}-%{version}.tar.gz
 URL:		http://www.lokigames.com/development/smjpeg.php3
-BuildRequires:	SDL-devel >= 1.0.1
+BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
