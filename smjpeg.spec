@@ -1,12 +1,13 @@
 Summary:	SDL SMJPEG Library
 Name:		smjpeg
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
+Group(de):	Libraries
 Group(fr):	Librairies
 Group(pl):	Biblioteki
-Source0:	ftp://ftp.lokigames.com/pub/open-source/smjpeg/smjpeg-%{version}.tar.gz
+Source0:	ftp://ftp.lokigames.com/pub/open-source/smjpeg/%{name}-%{version}.tar.gz
 URL:		http://www.lokigames.com/development/smjpeg.php3
 BuildRequires:	SDL-devel >= 1.0.1
 BuildRequires:	XFree86-devel
@@ -20,6 +21,7 @@ Software in the games they port.
 Summary:	Smjpeg header files and development documentation
 Summary(pl):	Pliki nag³ówkowe oraz dokumentacja do smjpeg
 Group:		X11/Development/Libraries
+Group(de):	X11/Entwicklung/Libraries
 Group(pl):	X11/Programowanie/Biblioteki
 Requires:	%{name} = %{version}
 
@@ -33,6 +35,7 @@ Pliki nag³ówkowe oraz dokumentacja do biblioteki smjpeg.
 Summary:	Smjpeg static libraries
 Summary(pl):	Biblioteki statyczne smjpeg
 Group:		X11/Development/Libraries
+Group(de):	X11/Entwicklung/Libraries
 Group(pl):	X11/Programowanie/Biblioteki
 Requires:	%{name}-devel = %{version}
 
@@ -46,7 +49,6 @@ Biblioteki statyczne smjpeg.
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
