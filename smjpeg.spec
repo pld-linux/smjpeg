@@ -6,6 +6,7 @@ Release:	7
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://ftp.lokigames.com/pub/open-source/smjpeg/%{name}-%{version}.tar.gz
+# Source0-md5:	a21fc0b8227babb5e0aff63ae62e8bf6
 URL:		http://www.lokigames.com/development/smjpeg.php3
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	XFree86-devel
