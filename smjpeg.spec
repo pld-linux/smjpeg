@@ -1,16 +1,23 @@
 Summary:	SDL SMJPEG Library
 Name:		smjpeg
 Version:	0.2.1
-Release:	4
+Release:	5
 License:	LGPL
 Group:		Libraries
 Group(de):	Libraries
+Group(es):	Bibliotecas
 Group(fr):	Librairies
 Group(pl):	Biblioteki
+Group(pt_BR):	Bibliotecas
+Group(ru):	Библиотеки
+Group(uk):	Б╕бл╕отеки
 Source0:	ftp://ftp.lokigames.com/pub/open-source/smjpeg/%{name}-%{version}.tar.gz
 URL:		http://www.lokigames.com/development/smjpeg.php3
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	XFree86-devel
+BuildRequires:	autoconf
+BuildRequires;	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -22,7 +29,12 @@ Summary:	Smjpeg header files and development documentation
 Summary(pl):	Pliki nagЁСwkowe oraz dokumentacja do smjpeg
 Group:		X11/Development/Libraries
 Group(de):	X11/Entwicklung/Libraries
+Group(es):	X11/Desarrollo/Bibliotecas
+Group(fr):	X11/Development/Librairies
 Group(pl):	X11/Programowanie/Biblioteki
+Group(pt_BR):	X11/Desenvolvimento/Bibliotecas
+Group(ru):	X11/Разработка/Библиотеки
+Group(uk):	X11/Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -36,7 +48,12 @@ Summary:	Smjpeg static libraries
 Summary(pl):	Biblioteki statyczne smjpeg
 Group:		X11/Development/Libraries
 Group(de):	X11/Entwicklung/Libraries
+Group(es):	X11/Desarrollo/Bibliotecas
+Group(fr):	X11/Development/Librairies
 Group(pl):	X11/Programowanie/Biblioteki
+Group(pt_BR):	X11/Desenvolvimento/Bibliotecas
+Group(ru):	X11/Разработка/Библиотеки
+Group(uk):	X11/Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
@@ -49,6 +66,11 @@ Biblioteki statyczne smjpeg.
 %setup -q
 
 %build
+rm -f missing
+libtoolize --copy --force
+aclocal
+autoconf
+automake -a -c
 %configure
 %{__make}
 
