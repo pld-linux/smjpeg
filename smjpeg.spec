@@ -27,7 +27,7 @@ Loki Entertainment Software w ich portach gier.
 Summary:	Smjpeg header files and development documentation
 Summary(pl):	Pliki nag³ówkowe oraz dokumentacja do smjpeg
 Group:		X11/Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and development documentation for smjpeg.
@@ -39,7 +39,7 @@ Pliki nag³ówkowe oraz dokumentacja do biblioteki smjpeg.
 Summary:	Smjpeg static libraries
 Summary(pl):	Biblioteki statyczne smjpeg
 Group:		X11/Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Smjpeg static libraries.
