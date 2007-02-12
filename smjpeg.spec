@@ -1,5 +1,5 @@
 Summary:	SDL SMJPEG Library
-Summary(pl.UTF-8):   Biblioteka SDL SMJPEG
+Summary(pl.UTF-8):	Biblioteka SDL SMJPEG
 Name:		smjpeg
 Version:	0.2.1
 Release:	7
@@ -25,7 +25,7 @@ Loki Entertainment Software w ich portach gier.
 
 %package devel
 Summary:	Smjpeg header files and development documentation
-Summary(pl.UTF-8):   Pliki nagłówkowe oraz dokumentacja do smjpeg
+Summary(pl.UTF-8):	Pliki nagłówkowe oraz dokumentacja do smjpeg
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -37,7 +37,7 @@ Pliki nagłówkowe oraz dokumentacja do biblioteki smjpeg.
 
 %package static
 Summary:	Smjpeg static libraries
-Summary(pl.UTF-8):   Biblioteki statyczne smjpeg
+Summary(pl.UTF-8):	Biblioteki statyczne smjpeg
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
