@@ -1,5 +1,5 @@
 Summary:	SDL SMJPEG Library
-Summary(pl):	Biblioteka SDL SMJPEG
+Summary(pl.UTF-8):   Biblioteka SDL SMJPEG
 Name:		smjpeg
 Version:	0.2.1
 Release:	7
@@ -19,32 +19,32 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 SMJPEG is a custom Motion JPEG format used by Loki Entertainment
 Software in the games they port.
 
-%description -l pl
-SMJPEG to w³asny format ruchomych obrazów Motion JPEG u¿ywany przez
+%description -l pl.UTF-8
+SMJPEG to wÅ‚asny format ruchomych obrazÃ³w Motion JPEG uÅ¼ywany przez
 Loki Entertainment Software w ich portach gier.
 
 %package devel
 Summary:	Smjpeg header files and development documentation
-Summary(pl):	Pliki nag³ówkowe oraz dokumentacja do smjpeg
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe oraz dokumentacja do smjpeg
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and development documentation for smjpeg.
 
-%description devel -l pl
-Pliki nag³ówkowe oraz dokumentacja do biblioteki smjpeg.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe oraz dokumentacja do biblioteki smjpeg.
 
 %package static
 Summary:	Smjpeg static libraries
-Summary(pl):	Biblioteki statyczne smjpeg
+Summary(pl.UTF-8):   Biblioteki statyczne smjpeg
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Smjpeg static libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteki statyczne smjpeg.
 
 %prep
