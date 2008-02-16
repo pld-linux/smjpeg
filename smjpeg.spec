@@ -5,7 +5,8 @@ Version:	0.2.2
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	ftp://ftp.lokigames.com/pub/open-source/smjpeg/%{name}-%{version}.tar.gz
+# taken from http://icculus.org/smjpeg/ SVN
+Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	39364a0e32b564a116d1adc9525ac00d
 URL:		http://www.lokigames.com/development/smjpeg.php3
 BuildRequires:	SDL-devel >= 1.2.0
